@@ -31,3 +31,30 @@ To work with Rust it is recommended that you install [**`rustup`**](https://doc.
 - Compiler
 - Runs tests
 - Publish packages/releases to https://crates.io/
+
+## Your First Rust Application
+
+1. Create a new application using cargo:
+
+    ```
+    cargo new my-new-project
+    ```
+
+2. `cd` into the new project and take inventory of the resources created for you.
+
+3. Edit the `src/main.rs` file and be sure to include a `main()` function (this drives everything).
+
+4. To build+run at the same time:
+
+    ```
+    cargo run
+    ```
+
+5. To build a release:
+
+    ```
+    cargo build
+    cargo build --release
+    ```
+
+- - -
