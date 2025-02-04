@@ -4,7 +4,7 @@ Learn about the Rust programming language.
 
 <img src="https://rustacean.net/assets/rustacean-flat-happy.png" aligln="right" style="float:right; max-width:25%" />
 
-From the Data Science & Analytics Club, February 4, 2025. [**Slides**](introducing-rust.pdf).
+From a Data Science & Analytics Club workshop, held February 4, 2025. [**Slides**](introducing-rust.pdf).
 
 ## How to use this repository
 
