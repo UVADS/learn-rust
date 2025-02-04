@@ -4,6 +4,8 @@ Learn about the Rust programming language.
 
 <img src="https://rustacean.net/assets/rustacean-flat-happy.png" aligln="right" style="float:right; max-width:25%" />
 
+From the Data Science & Analytics Club, February 4, 2025. [**Slides**](introducing-rust.pdf).
+
 ## How to use this repository
 
 1. Clone the repo as usual to your local workstation.
@@ -22,7 +24,7 @@ Learn about the Rust programming language.
 
 ## Setting Up
 
-To work with Rust it is recommended that you install [**Cargo**](https://doc.rust-lang.org/cargo/getting-started/installation.html). Cargo does the following:
+To work with Rust it is recommended that you install [**`rustup`**](https://doc.rust-lang.org/cargo/getting-started/installation.html) which includes Cargo and other utilities. Cargo does the following:
 
 - Init new Rust projects
 - Package manager
