@@ -48,13 +48,6 @@ cp ./target/release/$APP_NAME /bin/server
 # (e.g., alpine@sha256:664888ac9cfd28068e062c991ebcff4b4c7307dc8dd4df9e728bedde5c449d91).
 FROM alpine:3.18 AS final
 
-RUN /bin/touch /var/log/rust_api.log
-RUN /bin/touch /var/log/rust_api_error.log
-RUN /bin/chmod -R 755 /var/log/
-RUN /bin/chown -R nobody:nobody /var/log/
-# UN /bin/chown nobody:nobody /var/log/rust_api.log
-# RUN /bin/chown nobody:nobody /var/log/rust_api_error.log
-
 # Create a non-privileged user that the app will run under.
 # See https://docs.docker.com/go/dockerfile-user-best-practices/
 # ARG UID=10001

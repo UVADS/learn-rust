@@ -1,6 +1,5 @@
 use actix_web::{web, App, HttpResponse, HttpServer, Responder, middleware::Logger};
 use serde::{Deserialize, Serialize};
-use std::fs::OpenOptions;
 use env_logger::Builder;
 use log::LevelFilter;
 use std::io::Write;
@@ -12,13 +11,13 @@ struct Message {
 
 async fn zone_zpex() -> impl Responder {
     HttpResponse::Ok().json(Message {
-        content: String::from("Hello from Rust API!"),
+        content: String::from("Rust Zone Apex"),
     })
 }
 
 async fn get_message() -> impl Responder {
     let message = Message {
-        content: String::from("Hello from Rust API!"),
+        content: String::from("Hello from a Rust API!"),
     };
     HttpResponse::Ok().json(message)
 }
@@ -30,21 +29,8 @@ async fn create_message(message: web::Json<Message>) -> impl Responder {
 
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    // Set up logging to file
-    let http_log_file = OpenOptions::new()
-        .create(true)
-        .append(true)
-        .open("/var/log/rust_api.log")
-        .expect("Failed to open log file");
-
-    let error_log_file = OpenOptions::new()
-        .create(true)
-        .append(true)
-        .open("/var/log/rust_api_error.log")
-        .expect("Failed to open error log file");
-
+    // Set up logging to stdout/stderr
     Builder::new()
-        .target(env_logger::Target::Pipe(Box::new(http_log_file)))
         .filter_level(LevelFilter::Info)
         .format(|buf, record| {
             writeln!(
