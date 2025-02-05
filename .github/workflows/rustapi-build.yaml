@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: uvasds-systems/rust-api
+  IMAGE_NAME: uvads/rust-api
   IMAGE_TAG: 1.${{ github.run_number }} # GITHUB_RUN_NUMBER
   DOCKER_BUILDKIT: 1
 
