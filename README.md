@@ -63,3 +63,7 @@ To work with Rust it is recommended that you install [**`rustup`**](https://doc.
 - [The Book](https://doc.rust-lang.org/book/)
 - [Examples](https://doc.rust-lang.org/rust-by-example/)
 - [Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021)
+
+Of interest:
+
+- [Rewrite the `ls` command in Rust](https://endler.dev/2018/ls/) - from a [series](https://endler.dev/2017/yes/) of "useless Unix tools rewritten in Rust"
