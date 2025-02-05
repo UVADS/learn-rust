@@ -57,4 +57,9 @@ To work with Rust it is recommended that you install [**`rustup`**](https://doc.
     cargo build --release
     ```
 
-- - -
+## Resources
+
+- [**Rust**](https://www.rust-lang.org/) official page.
+- [The Book](https://doc.rust-lang.org/book/)
+- [Examples](https://doc.rust-lang.org/rust-by-example/)
+- [Playground](https://play.rust-lang.org/?version=stable&mode=debug&edition=2021)
